@@ -95,6 +95,10 @@ text-align: center;
     flex: 50%;
     max-width: 50%;
   }
+   .intro{
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/30/12/45/paper-5356269_960_720.jpg');
+    transform: rotate(90deg);
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -102,5 +106,9 @@ text-align: center;
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+   .intro{
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/30/12/45/paper-5356269_960_720.jpg');
+    transform: rotate(90deg);
   }
 }
