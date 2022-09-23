@@ -1,0 +1,111 @@
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin:0;
+  padding:0;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.intro {
+  max-width:100%;
+  text-align: center;
+  font-size: 1.5em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://cdn.pixabay.com/photo/2020/06/30/12/45/paper-5356269_960_720.jpg');
+  padding:20%;
+
+}
+.btn {
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 40px;
+}
+
+.column img {
+  margin-top: 80px;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+footer{
+text-align: center;
+}
+.contact{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  max-width: 100%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1366px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.heading{
+  margin-top: 70%;
+}
+.btn{
+  padding: 2rem;
+  border-radius: 70px;
+}
+.intro{
+  font-size: 3rem;
+  height:1300px;
+  background-image: url('https://cdn.pixabay.com/photo/2020/06/30/12/45/paper-5356269_960_720.jpg');
+  
+}
+
+.container {
+
+  margin-top: 10%;
+  position: relative;
+}
+
+/* Make the image to responsive */
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
